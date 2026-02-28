@@ -4,7 +4,10 @@ import '../models/weather_model.dart';
 
 class WeatherService {
   // OpenWeatherMap API key
-  static const String _apiKey = '893df2e95a4e84b6cdb5fbbeb405445d';
+  // NOTE: New API keys take 1-2 hours to activate after creation
+  // If you get 401 errors, please wait or generate a new key at:
+  // https://home.openweathermap.org/api_keys
+  static const String _apiKey = '65c42783c3388ae8d75cf79673e4e7c1';
   static const String _baseUrl = 'https://api.openweathermap.org/data/2.5';
 
   Future<Weather> getCurrentWeather(double lat, double lon) async {
